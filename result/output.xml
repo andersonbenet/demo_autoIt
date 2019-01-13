@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20190113 17:14:47.200" generator="Robot 3.1.1 (Python 2.7.15 on win32)">
+<suite source="C:\Projetos robotframework - Git\demo_process\test\Home.robot" id="s1" name="Home">
+<test id="s1-t1" name="TC001 - Acessar system">
+<kw name="Open system" library="Home">
+<kw name="Run" library="OperatingSystem">
+<doc>Runs the given command in the system and returns the output.</doc>
+<arguments>
+<arg>C:\\Projetos robotframework - Git\\demo_process\\resource${\}acesso_legado.bat</arg>
+</arguments>
+<assign>
+<var>${output}</var>
+</assign>
+<msg timestamp="20190113 17:14:47.280" level="INFO">Running command 'C:\Projetos robotframework - Git\demo_process\resource${}acesso_legado.bat 2&gt;&amp;1'.</msg>
+<msg timestamp="20190113 17:14:47.289" level="INFO">${output} = 'C:\Projetos' não é reconhecido como um comando interno
+ou externo, um programa operável ou um arquivo em lotes.</msg>
+<status status="PASS" endtime="20190113 17:14:47.289" starttime="20190113 17:14:47.271"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>C:\\Projetos robotframework - Git\\demo_process\\resource\${output}</arg>
+</arguments>
+<msg timestamp="20190113 17:14:47.290" level="INFO">C:\Projetos robotframework - Git\demo_process\resource${output}</msg>
+<status status="PASS" endtime="20190113 17:14:47.291" starttime="20190113 17:14:47.290"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${output}</arg>
+</arguments>
+<msg timestamp="20190113 17:14:47.291" level="INFO">'C:\Projetos' não é reconhecido como um comando interno
+ou externo, um programa operável ou um arquivo em lotes.</msg>
+<status status="PASS" endtime="20190113 17:14:47.292" starttime="20190113 17:14:47.291"></status>
+</kw>
+<status status="PASS" endtime="20190113 17:14:47.292" starttime="20190113 17:14:47.270"></status>
+</kw>
+<status status="PASS" endtime="20190113 17:14:47.292" critical="yes" starttime="20190113 17:14:47.269"></status>
+</test>
+<status status="PASS" endtime="20190113 17:14:47.294" starttime="20190113 17:14:47.203"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Home" pass="1">Home</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
