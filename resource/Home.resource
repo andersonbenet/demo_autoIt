@@ -1,10 +1,10 @@
 *** Settings ***
-Library    Process
-Library    OperatingSystem
+Library  AutoItLibrary
 
 *** Variables ***
-${legado}  C:\\Users\\Benet\\Desktop\\acesso_legado.bat
+${legado}        "C:\\Users\\Benet\\Desktop\\acesso_legado.bat"
 
 *** Keywords ***
 Open system
-    ${output}  Run  ${CURDIR}${\}acesso_legado.bat
+    Run    ${legado}
+    Win Wait        WindowTitle=Legado
